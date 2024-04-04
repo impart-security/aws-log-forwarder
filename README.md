@@ -18,7 +18,7 @@ Lambda function to stream ec2 loadbalancer access logs and cloudwatch logs to im
 INSPECTOR_MODE: "log_stream_server"
 INSPECTOR_LOGSTREAM_LISTEN_ADDR: ":<port>"
 INSPECTOR_LOGSTREAM_ID: "<log_binding_logstream_ID>" # from step 1
-INSPECTOR_API_ACCESS_TOKEN: "<access_token>" # setup here https://console.impartsecurity.net/orgs/_/settings/tokens#create. Click `New inspector access token`, click `Inspector access` to set the scopes.
+INSPECTOR_API_ACCESS_TOKEN: "<access_token>" # setup here https://console.impartsecurity.net/orgs/_/access-tokens#create. Click `New inspector access token`, click `Inspector access` to set the scopes.
 ```
 
 3. Run the lambda function subscribed either to cloud watch events or elb s3 events.
